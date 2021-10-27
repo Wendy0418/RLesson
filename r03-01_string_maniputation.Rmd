@@ -1,3 +1,4 @@
+install.packages("tidyverse")
 ---
 title: "3-1 字串處理"
 author: "kbjiyu"
