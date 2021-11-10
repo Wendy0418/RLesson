@@ -229,7 +229,7 @@ check_age_above_18 <- function(age){
   is_above_18 <- age >= 18
   print(paste("age", age, "is above 18?:", is_above_18))
   
-  #return(is_above_18) # 註解掉這行試試看，結果還會是你要的嗎?
+  return(is_above_18) # 註解掉這行試試看，結果還會是你要的嗎?
 }
 
 res <- check_age_above_18(20)
@@ -430,8 +430,7 @@ factorial(5)
 - 請寫出一函數 calc_bmi(height_m, weight_kg)，計算並返回 bmi值。
 ```{r}
 calc_bmi <- function(height_m, weight_kg) {
-   bmi <- weight_kg/(height_m)^2
-   return(bmi)
+
 }
 
 calc_bmi(1.76, 70)
@@ -444,11 +443,8 @@ calc_bmi(1.76, 70)
 ```{r}
 
 print_numSeq <- function(num) {
-print(num)
-if (num>1){
-print_numSeq(num-1)
+
 }
-  }
 print_numSeq(5)
 
 ```
@@ -469,15 +465,7 @@ print_numSeq(5)
 d <- c(1, 2, 3, 4, 5, 9, 10, 17, 20,21, 25, 30, 35, 40, 50, 100, 110, 120)
 
 cut_numGroup <- function(num) {
- if (num>50){
-   return("A_51up")
- }else if (31<num<50){
-   return("A_51up")
- }else if (11<num<30){
-   return("C_11_30")
- }else{
-   return("D_0_10")
- }
+
 }
 
 # 迴圈方式
